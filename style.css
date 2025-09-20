@@ -149,7 +149,12 @@ img {
   gap: 10px;
 }
 
+.menu-btn {
+  display: none;
+}
+
 .section {
+  position: relative;
   padding: 80px 0;
 }
 
@@ -252,6 +257,11 @@ img {
   margin-top: 60px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+}
+
+.collection-item {
+  width: calc((100% - 60px) / 3);
 }
 
 .collection-thumbnails {
@@ -376,7 +386,6 @@ img {
 }
 
 .category-item {
-  display: flex;
   flex-direction: column;
   background-color: var(--gray-color-500);
   align-items: center;
@@ -399,4 +408,223 @@ img {
 
 .category-title {
   font-size: 22px;
+}
+
+/* Responsive 
+
+Thường css dựa theo breakpoint (breakpoint: điểm dừng)
+Tips: Tablet thường là 1024px, Mobile thường là 768px, tuy nhiên nên tùy theo thiết kế mà chọn breakpoint phù hợp
+
+Sử dụng media query để viết css responsive
+*/
+
+/* tablet */
+@media screen and (max-width: 1110px) {
+  /* CSS cho header */
+  .logo {
+    width: 182px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .navigation {
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    padding: 30px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--gray-color-400);
+    position: fixed;
+    transform: translateX(
+      100%
+    ); /* dịch chuyển theo trục X 100% (tức cả phần tử)*/
+    transition: transform 0.3s; /* chuyển đổi mượt mà trong 0.3s */
+  }
+
+  .navigation.is-open {
+    transform: translateX(
+      0
+    ); /* khi có class is-open thì dịch chuyển về vị trí ban đầu */
+  }
+
+  /* Common css */
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  /* Section hero */
+  .sectopm-hero {
+    padding: 80px 0;
+  }
+  .section-hero .section-title {
+    font-size: 38px;
+  }
+
+  .section-hero .section-subtitle {
+    font-size: 16px;
+  }
+
+  .additional-info-item .label {
+    font-size: 16px;
+  }
+  .additional-info-item .value {
+    font-size: 22px;
+  }
+
+  /* Section collection */
+
+  .collection-list {
+    margin-top: 40px;
+  }
+
+  .collection-item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  /* Section creator */
+
+  .creator-item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .creator-card {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .creator-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .creator-info {
+    margin-top: 0px;
+  }
+
+  .creator-rank {
+    top: 13px;
+    left: 12px;
+  }
+
+  .creator-info .creator-name {
+    text-align: left;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  /* CSS cho header */
+  .logo {
+    width: 182px;
+  }
+  .header {
+    padding: 15px 30px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation.is-open {
+    transform: translateX(
+      0
+    ); /* khi có class is-open thì dịch chuyển về vị trí ban đầu */
+  }
+
+  .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Section hero */
+
+  .section-hero {
+    padding: 40px 0;
+    padding-bottom: 237px;
+    position: relative;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-media-box > img {
+    width: 100%;
+  }
+
+  .hero-content-wrap {
+    width: calc(100% - 60px);
+    margin-top: 0;
+    position: absolute;
+    bottom: 40px;
+  }
+
+  .additional-info-list {
+    justify-content: center;
+  }
+
+  /* Section collection */
+
+  .collection-list {
+    margin-top: 40px;
+  }
+
+  .collection-item {
+    width: 100%;
+  }
+
+  /* Section creator */
+
+  .section-creator {
+    padding-bottom: 140px;
+  }
+
+  .creator-card {
+    gap: 10px;
+  }
+
+  .section-creator .section-heading .btn {
+    position: absolute;
+    width: calc(100% - 60px);
+    bottom: 40px;
+  }
+
+  .creator-item {
+    width: 100%;
+  }
+
+  /* Section category */
+
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .category-image > img {
+    width: 100%;
+  }
 }

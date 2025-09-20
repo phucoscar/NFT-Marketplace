@@ -13,10 +13,10 @@
   <body>
     <div class="wrap">
       <header class="header">
-        <a href="index.html">
+        <a href="index.html" class="logo">
           <img src="./images/logo.png" alt="NFT Marketplace" />
         </a>
-        <nav class="navigation">
+        <nav class="navigation js-navigation">
           <ul class="menu">
             <li class="menu-item">
               <a href="#" class="menu-link">Marketplace</a>
@@ -35,6 +35,10 @@
             <span class="btn-text">Sign Up</span>
           </button>
         </nav>
+
+        <button type="button" class="menu-btn js-menu-btn">
+          <img src="./images/icon_menu.png" alt="Menu button" />
+        </button>
       </header>
       <main>
         <section class="section section-hero">
@@ -50,28 +54,30 @@
                     buy and sell art from more than 20k NFT artists.
                   </p>
                 </div>
-                <div class="hero-button">
-                  <button class="btn btn-primary">
-                    <span class="btn-icon"
-                      ><img src="./images/icon_plane.png" alt=""
-                    /></span>
-                    <span class="btn-text">Get Started</span>
-                  </button>
+                <div class="hero-content-wrap">
+                  <div class="hero-button">
+                    <button class="btn btn-primary">
+                      <span class="btn-icon"
+                        ><img src="./images/icon_plane.png" alt=""
+                      /></span>
+                      <span class="btn-text">Get Started</span>
+                    </button>
+                  </div>
+                  <ul class="additional-info-list">
+                    <li class="additional-info-item">
+                      <span class="value">240k+</span>
+                      <span class="label">Total Sale</span>
+                    </li>
+                    <li class="additional-info-item">
+                      <span class="value">100k+</span>
+                      <span class="label">Auctions</span>
+                    </li>
+                    <li class="additional-info-item">
+                      <span class="value">240k+</span>
+                      <span class="label">Artists</span>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="additional-info-list">
-                  <li class="additional-info-item">
-                    <span class="value">240k+</span>
-                    <span class="label">Total Sale</span>
-                  </li>
-                  <li class="additional-info-item">
-                    <span class="value">100k+</span>
-                    <span class="label">Auctions</span>
-                  </li>
-                  <li class="additional-info-item">
-                    <span class="value">240k+</span>
-                    <span class="label">Artists</span>
-                  </li>
-                </ul>
               </div>
               <div class="hero-media">
                 <div class="hero-media-box">
@@ -454,58 +460,74 @@
         </section>
         <section class="section section-categories">
           <div class="container">
-             <div class="section-heading">
+            <div class="section-heading">
               <h2 class="section-title">Browse Categories</h2>
             </div>
 
             <ul class="category-list">
               <li class="category-item">
                 <div class="category-image">
-                  <img src="./images/categories/img_category01.png" alt="">
+                  <img src="./images/categories/img_category01.png" alt="" />
                 </div>
-                <div class="category-info"><h3 class="category-title">Art</h3></div>
+                <div class="category-info">
+                  <h3 class="category-title">Art</h3>
+                </div>
               </li>
-               <li class="category-item">
+              <li class="category-item">
                 <div class="category-image">
-                  <img src="./images/categories/img_category01.png" alt="">
+                  <img src="./images/categories/img_category01.png" alt="" />
                 </div>
-                <div class="category-info"><h3 class="category-title">Art</h3></div>
+                <div class="category-info">
+                  <h3 class="category-title">Art</h3>
+                </div>
               </li>
-               <li class="category-item">
+              <li class="category-item">
                 <div class="category-image">
-                  <img src="./images/categories/img_category01.png" alt="">
+                  <img src="./images/categories/img_category01.png" alt="" />
                 </div>
-                <div class="category-info"><h3 class="category-title">Art</h3></div>
+                <div class="category-info">
+                  <h3 class="category-title">Art</h3>
+                </div>
               </li>
-               <li class="category-item">
+              <li class="category-item">
                 <div class="category-image">
-                  <img src="./images/categories/img_category01.png" alt="">
+                  <img src="./images/categories/img_category01.png" alt="" />
                 </div>
-                <div class="category-info"><h3 class="category-title">Art</h3></div>
+                <div class="category-info">
+                  <h3 class="category-title">Art</h3>
+                </div>
               </li>
-               <li class="category-item">
+              <li class="category-item">
                 <div class="category-image">
-                  <img src="./images/categories/img_category01.png" alt="">
+                  <img src="./images/categories/img_category01.png" alt="" />
                 </div>
-                <div class="category-info"><h3 class="category-title">Art</h3></div>
+                <div class="category-info">
+                  <h3 class="category-title">Art</h3>
+                </div>
               </li>
-               <li class="category-item">
+              <li class="category-item">
                 <div class="category-image">
-                  <img src="./images/categories/img_category01.png" alt="">
+                  <img src="./images/categories/img_category01.png" alt="" />
                 </div>
-                <div class="category-info"><h3 class="category-title">Art</h3></div>
+                <div class="category-info">
+                  <h3 class="category-title">Art</h3>
+                </div>
               </li>
-               <li class="category-item">
+              <li class="category-item">
                 <div class="category-image">
-                  <img src="./images/categories/img_category01.png" alt="">
+                  <img src="./images/categories/img_category01.png" alt="" />
                 </div>
-                <div class="category-info"><h3 class="category-title">Art</h3></div>
+                <div class="category-info">
+                  <h3 class="category-title">Art</h3>
+                </div>
               </li>
-               <li class="category-item">
+              <li class="category-item">
                 <div class="category-image">
-                  <img src="./images/categories/img_category01.png" alt="">
+                  <img src="./images/categories/img_category01.png" alt="" />
                 </div>
-                <div class="category-info"><h3 class="category-title">Art</h3></div>
+                <div class="category-info">
+                  <h3 class="category-title">Art</h3>
+                </div>
               </li>
             </ul>
           </div>
@@ -513,5 +535,33 @@
       </main>
       <footer></footer>
     </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".js-navigation");
+
+      menuBtn.addEventListener("click", function () {
+        if (navigation.classList.contains("is-open")) {
+          navigation.classList.remove("is-open");
+        } else {
+          navigation.classList.add("is-open");
+        }
+      });
+
+      document.addEventListener("click", function (event) {
+        const { target } = event; // Đây là cú pháp destructuring trong JS
+        // event.target => là phần tử mà ta click vào
+        const isClickInsideNav = navigation.contains(target);
+        const isClickOnMenuBtn = menuBtn.contains(target);
+
+        if (
+          navigation.classList.contains("is-open") &&
+          !isClickInsideNav &&
+          !isClickOnMenuBtn
+        ) {
+          navigation.classList.remove("is-open");
+        }
+      });
+    </script>
   </body>
 </html>
